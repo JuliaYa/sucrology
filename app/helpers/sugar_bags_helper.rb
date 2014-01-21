@@ -1,0 +1,2 @@
+module SugarBagsHelper
+end
