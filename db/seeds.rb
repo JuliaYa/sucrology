@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+SugarBag.create({name: 'Krabi sugar', bags_count: 2, from: 'Krabi'})
+SugarBag.create({name: 'Pattaya sugar', bags_count: 2, from: 'Pattaya'})
+SugarBag.create({name: 'Mac sugar', bags_count: 2, from: 'Bangkok'})

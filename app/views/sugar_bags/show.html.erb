@@ -1,5 +1,8 @@
-<p id="notice"><%= notice %></p>
+<p id="notice"><%= @sugar_bag.name %></p>
 
+<p>Bags come from <%= @sugar_bag.from%></p>
+
+<p>Count of bags: <%= @sugar_bag.bags_count%></p>
 
 <%= link_to 'Edit', edit_sugar_bag_path(@sugar_bag) %> |
 <%= link_to 'Back', sugar_bags_path %>

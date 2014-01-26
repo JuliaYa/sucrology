@@ -1,7 +1,8 @@
-<h1>Listing sugar_bags</h1>
+<h1>My sugar bags</h1>
 
 <table>
   <tr>
+    <th></th>
     <th></th>
     <th></th>
     <th></th>
@@ -9,6 +10,7 @@
 
 <% @sugar_bags.each do |sugar_bag| %>
   <tr>
+    <td><%= sugar_bag.name %> from <%= sugar_bag.from %></td>
     <td><%= link_to 'Show', sugar_bag %></td>
     <td><%= link_to 'Edit', edit_sugar_bag_path(sugar_bag) %></td>
     <td><%= link_to 'Destroy', sugar_bag, method: :delete, data: { confirm: 'Are you sure?' } %></td>
