@@ -1,6 +1,8 @@
 Sucrology::Application.routes.draw do
   resources :sugar_bags
 
+  root :to => "sugar_bags#index"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
