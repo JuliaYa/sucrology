@@ -1,3 +1,27 @@
 // Place all the styles related to the SugarBags controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.content-container{
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.common-list-container{
+
+  .collection-item{
+    border:1px solid #ff0000;
+    padding: 20px;
+    margin: 0 10px 10px;
+
+    .name{
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 24px;
+    }
+  }
+}
+.side-panel{
+  padding: 20px;
+  border:1px solid #ff0000;
+}

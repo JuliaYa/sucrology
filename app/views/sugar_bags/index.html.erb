@@ -1,17 +1,17 @@
 <h1>My sugar bags</h1>
 
-<article class="list-container">
-    <% @sugar_bags.each do |sugar_bag| %>
-        <div class="col-md-4">
-            <div><%= sugar_bag.name %> from <%= sugar_bag.from %></div>
-            <span><%= link_to 'Show', sugar_bag %></span>
-            <span><%= link_to 'Edit', edit_sugar_bag_path(sugar_bag) %></span>
-            <span><%= link_to 'Destroy', sugar_bag, method: :delete, data: { confirm: 'Are you sure?' } %></span>
-        </div>
-    <% end %>
-
-</article>
-
-<br />
-
-<%= link_to 'New Sugar bag', new_sugar_bag_path %>
+<div class="content-container">
+    <article class="common-list-container col-md-10">
+        <% @sugar_bags.each do |sugar_bag| %>
+            <div class="col-md-3 collection-item">
+                <div class="name"><%= sugar_bag.name %> from <%= sugar_bag.from %></div>
+                <%= link_to 'Show', sugar_bag, {:class=>"btn btn-info"} %>
+                <%= link_to 'Edit', edit_sugar_bag_path(sugar_bag), {:class=>"btn btn-primary"}%>
+                <%= link_to 'Del', sugar_bag, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"btn btn-danger" %>
+            </div>
+        <% end %>
+    </article>
+    <aside class="side-panel col-md-2">
+      <%= link_to 'New Sugar bag', new_sugar_bag_path, {:class=>"btn btn-primary"}%>
+    </aside>
+</div>
